@@ -96,7 +96,7 @@ class GetFieldDict():
     def normalize_default(self, rv, field_instance):
         if 'default' in rv:
             if callable(rv['default']):
-                rv['default'] = rv['default']()
+                rv['default'] = ""
 
         # TODO: handle relationships
 
